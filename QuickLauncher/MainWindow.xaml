@@ -1,0 +1,48 @@
+﻿<Window x:Class="QuickLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuickLauncher"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="550" 
+        Width="335" 
+        WindowStyle="None" 
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        Background="Transparent" Left="1000" Top="200"
+        >
+    <Border Background="#FF130E0E" CornerRadius="10" Margin="5" MouseDown="Border_MouseDown">
+        <Border.Effect>
+            <DropShadowEffect ShadowDepth="0"/>
+        </Border.Effect>
+        <Grid>
+            <Grid Margin="0,0,0,500">
+                <!--<Image HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="340" Source="/background_black.png" Stretch="Fill" Margin="-10,0,0,0"/>-->
+                <Image Source="/Assets/button_close.png" Name="button_close" HorizontalAlignment="Left" Height="45" Margin="285,0,0,0" VerticalAlignment="Top" Width="45" MouseLeftButtonDown="button_close_MouseLeftButtonDown"/>
+            </Grid>
+            <Grid Margin="0,46,0,0">
+                <TabControl Background="#FF11FD06">
+                    <TabItem Header="TabItem">
+
+                        <!--<Border ConerCi></Border>-->
+                        <Grid Background="#FF512929">
+                            <ListView HorizontalAlignment="Center" Height="446" VerticalAlignment="Center" Width="299" d:ItemsSource="{d:SampleData ItemCount=5}">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn/>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="TabIddsatem">
+                        <Grid Background="#FFE5E5E5"/>
+                    </TabItem>
+                </TabControl>
+
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
