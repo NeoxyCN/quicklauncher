@@ -23,17 +23,50 @@
                 <Image Source="/Assets/button_close.png" Name="button_close" HorizontalAlignment="Left" Height="45" Margin="285,0,0,0" VerticalAlignment="Top" Width="45" MouseLeftButtonDown="button_close_MouseLeftButtonDown"/>
             </Grid>
             <Grid Margin="0,46,0,0">
-                <TabControl Background="#FF11FD06">
+                <TabControl Background="#FF130E0E">
                     <TabItem Header="TabItem">
 
                         <!--<Border ConerCi></Border>-->
-                        <Grid Background="#FF512929">
-                            <ListView HorizontalAlignment="Center" Height="446" VerticalAlignment="Center" Width="299" d:ItemsSource="{d:SampleData ItemCount=5}">
-                                <ListView.View>
-                                    <GridView>
-                                        <GridViewColumn/>
-                                    </GridView>
-                                </ListView.View>
+                        <Grid Background="#FF130E0E">
+                            <ListView  Background="#FF130E0E" HorizontalAlignment="Center" Height="466" VerticalAlignment="Center" Width="319" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                                <StackPanel Orientation="Horizontal">
+                                    <ListViewItem>
+                                        <StackPanel>
+                                            <Image Source="/Assets/background_black.png" Width="305"></Image>
+                                            <Label HorizontalAlignment="Center">AAA</Label>
+                                        </StackPanel>
+                                    </ListViewItem>
+                                    <ListViewItem>
+                                        <StackPanel>
+                                            <Image Source="/Assets/background_black.png" Width="305"></Image>
+                                            <Label HorizontalAlignment="Center">BBB</Label>
+                                        </StackPanel>
+                                    </ListViewItem>
+                                    <ListViewItem>
+                                        <StackPanel>
+                                            <Image Source="/Assets/background_black.png" Width="305"></Image>
+                                            <Label HorizontalAlignment="Center">CCC</Label>
+                                        </StackPanel>
+                                    </ListViewItem>
+                                    <ListViewItem>
+                                        <StackPanel>
+                                            <Image Source="/Assets/background_black.png" Width="305"></Image>
+                                            <Label HorizontalAlignment="Center">DDD</Label>
+                                        </StackPanel>
+                                    </ListViewItem>
+                                    <ListViewItem>
+                                        <StackPanel>
+                                            <Image Source="/Assets/background_black.png" Width="305"></Image>
+                                            <Label HorizontalAlignment="Center">EEE</Label>
+                                        </StackPanel>
+                                    </ListViewItem>
+                                    <ListViewItem>
+                                        <StackPanel>
+                                            <Image Source="/Assets/background_black.png" Width="305"></Image>
+                                            <Label HorizontalAlignment="Center">FFF</Label>
+                                        </StackPanel>
+                                    </ListViewItem>
+                                </StackPanel>
                             </ListView>
                         </Grid>
                     </TabItem>
