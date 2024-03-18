@@ -15,6 +15,10 @@ import {
 import { createTheme, inputDark, datePickerDark } from 'naive-ui'
 import { zhCN, dateZhCN } from 'naive-ui'
 
+import {invoke} from '@tauri-apps/api/tauri'
+
+invoke('run_local')
+
 export default defineComponent({
     components: {
         NConfigProvider,
