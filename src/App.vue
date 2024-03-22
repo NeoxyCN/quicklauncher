@@ -12,6 +12,7 @@ import Home from './components/Home.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" /> -->
+  
   <Home />
 </template>
 
