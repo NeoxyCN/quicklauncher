@@ -14,8 +14,11 @@ import {
 } from 'naive-ui'
 import { createTheme, inputDark, datePickerDark } from 'naive-ui'
 import { zhCN, dateZhCN } from 'naive-ui'
-import { AccessAlarmSharp } from '@vicons/material'
 import { Icon } from '@vicons/utils'
+
+import { 
+    SettingsSharp
+ } from '@vicons/material'
 
 import { invoke } from '@tauri-apps/api/tauri'
 
@@ -24,7 +27,7 @@ invoke('run_local', { path: 'test' })
 export default defineComponent({
     components: {
         Icon,
-        AccessAlarmSharp,
+        SettingsSharp,
 
         NConfigProvider,
         NInput,
@@ -53,9 +56,9 @@ export default defineComponent({
         <n-layout-header>
             <n-space>
                 <n-button type="primary">
-                    Primary
-                    <Icon>
-                        <AccessAlarmSharp />
+                    Setting
+                    <Icon style="margin-left: 8px;">
+                    <SettingsSharp />
                     </Icon>
                 </n-button>
             </n-space>
